@@ -33,7 +33,8 @@
                             <td><?php echo $a->alamat ?></td>
                             <td><?php echo $a->no_hp ?></td>
                             <td>
-                                <?php echo anchor('c_admin/edit/' . $a->id_admin, '<i class="fas fa-edit"></i>'); ?> &nbsp;
+                                <?php echo anchor('c_admin/edit/' . $a->id_admin, '<i class="fas fa-edit"></i>'); ?>
+                                &nbsp;
                                 <!--hyperlink untuk edit data-->
                                 <?php echo anchor('c_admin/hapus/' . $a->id_admin, '<i class="fas fa-trash-alt"></i>', array('onclick' => "return confirm('Do you want delete this record?')")) ?>
                                 <!--hyperlink untuk hapus data-->
