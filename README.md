@@ -1,15 +1,15 @@
-Deskripsi Sistem Informasi
+**Deskripsi Sistem Informasi**
 
 Sistem Informasi Website Admin PDAM sederhana ini merupakan sistem infromasti yang digunakan untuk pencatatan pelanggan PDAM.
 
-Yang Dibutuhkan :
+**Yang Dibutuhkan :**
 1. XAMPP 7.2.28 atau lebih baru
 2. PHP versi 5.6 atau lebih
 3. Text Editor seperti Visual Studio Code atau lainnya
 4. Template SB Admin 2 Bootstrap
 5. CodeIgniter versi 3.1.11
 
-Konfigurasi :
+**Konfigurasi :**
 1. pertama nyalakan XAMPP agar dapat menjalankan localhost dan phpmyadmin
 2. Kemudian atur konfigurasi sebagai berikut
 pada file config/autoload.php
@@ -68,5 +68,5 @@ $route['404_override']  =  '';
 $route['translate_uri_dashes']  =  FALSE;
 ```
 
-Implementasi :
+**Implementasi :**
 Masukkan link http://localhost/Admin_PDAM/c_login/ untuk mulai menjalankan website
