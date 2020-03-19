@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div>
-        <h1 class="text-gray-800 text-center"><B>DAFTAR ADMIN</B></h1>
+        <h1 class="text-gray-800 text-center"><B>DATA ADMIN</B></h1>
         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
     </div><br>
     <h1 class="h3 mb-2 text-gray-800"><a class="btn btn-primary" href="<?= base_url('c_admin/tambah/'); ?>"><i class="fas fa-user-plus"></i>&nbsp; <B>DATA ADMIN</B></a></h1>
