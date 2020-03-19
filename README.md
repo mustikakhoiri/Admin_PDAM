@@ -71,5 +71,7 @@ $route['translate_uri_dashes']  =  FALSE;
 **Implementasi :**
 
 Masukkan link http://localhost/Admin_PDAM/c_login/ untuk mulai menjalankan website.
+
 Dalam website tersebut terdapat 2 user, yaitu Super Admin dan Admin.
+
 Jika login sebagai Admin, maka tidak akan dapat mengakses fitur Admin.
