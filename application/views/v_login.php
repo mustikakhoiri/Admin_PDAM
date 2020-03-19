@@ -22,14 +22,14 @@
                                         <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
                                     </div>
 
-                                    <?= $this->session->flashdata('message'); ?>
+                                    <?= $this->session->flashdata('message') ?>
 
-                                    <form class="user" method="post" action="<?= base_url('c_login/aksi_login'); ?>">
+                                    <form method="post" action="<?= base_url('c_login/aksi_login'); ?>">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="username" name="username" required placeholder="Enter Username Address..." value="<?= set_value('username'); ?>">
+                                            <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="Enter Username Address..." value="<?= set_value('username'); ?>">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="password" name="password" required placeholder="Password" data-toggle="password">
+                                            <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" data-toggle="password">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login

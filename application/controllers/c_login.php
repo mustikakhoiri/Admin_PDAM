@@ -19,10 +19,17 @@ class C_login extends CI_Controller
     //method yang akan dimuat saat controller c_login ini diakses
     function index()
     {
-        //baris kode untuk menampilkan view v_login
-        $this->load->view('templates/header');
-        $this->load->view('v_login');
-        $this->load->view('templates/footer');
+        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
+
+        if ($this->form_validation->run() == false) {
+            //baris kode untuk menampilkan view v_login
+            $this->load->view('templates/header');
+            $this->load->view('v_login');
+            $this->load->view('templates/footer');
+        } else {
+            $this->aksi_login();
+        }
     }
 
     //function untuk melakukan aksi login
@@ -49,11 +56,10 @@ class C_login extends CI_Controller
                 'status' => "login"
             );
             $this->session->set_userdata($data_session);
-
             redirect('c_dashboard'); //jika sudah login maka akan dialihkan ke controller dashboard
-
         } else {
-            echo "username atau password salah !"; //peringatan jika username atau password salah
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username atau Password Anda Salah!</div>');
+            redirect('c_login');
         }
     }
 
