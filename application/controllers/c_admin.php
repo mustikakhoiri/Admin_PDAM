@@ -17,15 +17,8 @@ class C_admin extends CI_Controller
         $this->load->model('m_data');
 
         //jika status session bukan login
-        if ($this->session->userdata('status') == "login") {
+        if ($this->session->userdata('status') != "login") {
             //maka dipindahkan ke controller c_login
-            if ($this->session->userdata('role_id') != 1) {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Anda Tidak Memiliki Akses Di Fitur Admin!</div>');
-                redirect('c_dashboard');
-            } else {
-                redirect(base_url("c_login"));
-            }
-        } else {
             redirect(base_url("c_login"));
         }
     }

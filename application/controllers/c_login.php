@@ -57,6 +57,7 @@ class C_login extends CI_Controller
             );
             $this->session->set_userdata($data_session);
             redirect('c_dashboard'); //jika sudah login maka akan dialihkan ke controller dashboard
+
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username atau Password Anda Salah!</div>');
             redirect('c_login');

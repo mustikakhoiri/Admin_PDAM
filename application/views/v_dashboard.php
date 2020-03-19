@@ -5,7 +5,6 @@
     <div>
         <h1 class="text-gray-800 text-center">Selamat Datang <?= $admin['username']; ?>!</h1>
         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-        <?= $this->session->flashdata('message') ?>
     </div>
 </div>
 <!-- /.container-fluid -->
