@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label for="jenis_kelamin"><B>JENIS KELAMIN :</B></label>
-                <select class="custom-select" name="jenis_kelamin" value="<?php echo $p->jenis_kelamin ?>">>
+                <select class="custom-select" name="jenis_kelamin" value="<?php echo $p->jenis_kelamin ?>">
                     <option selected>Pilih Jenis Kelamin</option>
                     <option>Laki-Laki</option>
                     <option>Perempuan</option>
